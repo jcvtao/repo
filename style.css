@@ -1,0 +1,68 @@
+:root {
+  --fondo: #f6f4ee;
+  --tinta: #16130f;
+  --acento: #c2410c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, var(--fondo), #ece7db);
+  color: var(--tinta);
+  font-family: system-ui, sans-serif;
+}
+
+main {
+  max-width: 640px;
+  padding: 48px;
+  text-align: center;
+}
+
+.etiqueta {
+  font-family: monospace;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--acento);
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0.2em 0;
+}
+
+h1 span {
+  color: var(--acento);
+}
+
+.texto {
+  font-size: 1.3rem;
+}
+
+button {
+  margin-top: 24px;
+  padding: 16px 32px;
+  font-size: 1.2rem;
+  font-family: monospace;
+  color: #fbf7ee;
+  background: var(--acento);
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+
+button:hover {
+  transform: scale(1.06);
+}
+
+.hora {
+  margin-top: 32px;
+  font-family: monospace;
+  color: #4a443b;
+}
